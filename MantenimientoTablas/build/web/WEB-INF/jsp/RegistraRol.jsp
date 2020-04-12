@@ -1,15 +1,11 @@
-<%-- 
-    Document   : RegistraRol
-    Created on : 06-abr-2020, 21:48:56
-    Author     : Cesar Huanes
---%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="formRol" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/all.css" type="text/css" media="all" />
+       <link rel="stylesheet" href="${pageContext.request.contextPath}/css/all.css" type="text/css" media="all" />
     </head>
    <body>
        <div class="content">

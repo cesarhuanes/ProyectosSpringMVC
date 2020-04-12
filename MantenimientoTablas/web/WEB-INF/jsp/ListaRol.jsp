@@ -12,10 +12,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/all.css" type="text/css" media="all" />
+        <title>JSP Page</title>
     </head>
   
     <body>
-        <div class="contentList">
+       
         <h1>Mantenimiento de Roles</h1>
     <ui>
         <li>
@@ -25,7 +26,7 @@
         
     </ui>
     
-        <table  style="margin: auto;width: 540px">
+        <table class="parainfo" style="margin: auto;width: 540px">
             
             <thead>
                     <td>Nº</td>
@@ -51,6 +52,6 @@
                 </c:forEach>
             </tbody>
         </table>
-        </div>
+   
     </body>
 </html>
