@@ -46,5 +46,7 @@ Contributor(s):
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/proyecto?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">root</property>
+    <mapping resource="hibernate/Clientes.hbm.xml"/>
+    <mapping resource="hibernate/Estado.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
