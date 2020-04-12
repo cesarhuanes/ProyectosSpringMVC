@@ -6,11 +6,8 @@ import java.util.List;
 
 
 public interface RolDao {
-    List<Rol> listaRol();
-  
+  List<Rol> listaRol();
   void saveRol(Rol rol);
-  
   Rol getRol(int idRol);
-  
   void deleteRol(int idRol);   
 }
