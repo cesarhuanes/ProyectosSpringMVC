@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-abr-2020 0:01:51 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.Clientes" table="clientes" catalog="proyecto" optimistic-lock="version">
+        <id name="codigo" type="java.lang.Integer">
+            <column name="codigo" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="estado" class="hibernate.Estado" fetch="select">
+            <column name="idEstado" not-null="true">
+                <comment>codigo de estado</comment>
+            </column>
+        </many-to-one>
+        <property name="nombreCliente" type="string">
+            <column name="nombreCliente" length="50" not-null="true">
+                <comment>'nombre de la empresa'</comment>
+            </column>
+        </property>
+        <property name="ruc" type="string">
+            <column name="ruc" length="11" not-null="true" unique="true">
+                <comment>'ruc de cliente'</comment>
+            </column>
+        </property>
+        <property name="nombreContacto" type="string">
+            <column name="nombreContacto" length="50" not-null="true">
+                <comment>'nombre de contacto'</comment>
+            </column>
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" not-null="true">
+                <comment>'email de contacto'</comment>
+            </column>
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" length="50" not-null="true">
+                <comment>'telefono de contacto'</comment>
+            </column>
+        </property>
+        <property name="usuarioCreador" type="string">
+            <column name="usuarioCreador" length="50" not-null="true" />
+        </property>
+        <property name="fechaCreacion" type="date">
+            <column name="fechaCreacion" length="10" not-null="true" />
+        </property>
+        <property name="usuarioModificador" type="string">
+            <column name="usuarioModificador" length="50" />
+        </property>
+        <property name="fechaModificacion" type="date">
+            <column name="fechaModificacion" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
